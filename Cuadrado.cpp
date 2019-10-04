@@ -29,8 +29,10 @@ int main(){
     cout<<endl<<"CALCULO DE AREA Y PERIMETRO DE UN CUADRADO"<<endl<<endl;
     pedir_datos(a);
     Cuadrado cuadro(a);
-
+    
+    system("clear");
     cuadro.perimetro();
+    cout<<endl;
     cuadro.area();
 
     cin.ignore();

@@ -19,7 +19,10 @@ void Cuadrado::perimetro(){
 void Cuadrado::area(){
     cout<<"El area es de: "<<(lado*lado)<<endl;
 }
-
+void pedir_datos(float &a){
+    cout<<"Ingrese el tamaño del lado del cuadrado: ";
+    cin>>a;
+}
 
 int main(){
 

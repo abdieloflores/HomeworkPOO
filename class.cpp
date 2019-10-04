@@ -13,7 +13,11 @@ class Rectangulo()
         void area();
 }
 
-Rectangulo::Rectangulo(float)
+//Mandando llamar la clase Rectangulo // Constructor
+Rectangulo::Rectangulo(float opc_largo, float opc_ancho){
+    largo = opc_largo;
+    ancho = opc_ancho;
+}
 
 int main()
 {

@@ -46,21 +46,15 @@ void pedir_datos(float &a, float&b){
 
 int main(){
     float a,b;
-    int opcion;
+    cout<<endl<<"CALCULAR AREA Y PERIMETRO DE UN RECTANGULO"<<endl<<endl;
 
-    while(1){
-        pedir_datos(a,b);
-        //Crear objeto = Instanciar una clase, (Podemos hacer cuantos objetos queramos de una clase)
-        //Creando Objeto Rectangulo
-        Rectangulo figura_1(a,b);
-        //Objeto mandando llamar el metodo
-        figura_1.perimetro();
-        figura_1.area();
-    }
-    //Evitar que se cierre terminal y espera cualquier tecla
+    pedir_datos(a,b);
+    Rectangulo figura_1(a,b);
+    figura_1.area();
+    figura_1.perimetro();
+
     cin.ignore();
-    cout<<endl<<"Presione cualquier tecla para salir"<<endl;
+    cout<<"Presione cualquier tecla para salir...";
     cin.get();
-
     return 0;
 }

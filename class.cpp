@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -47,7 +48,7 @@ void Rectangulo::menu(){
 
 int main(){
     float largo, ancho;
-    cout<<"Conoce el área de un rectagulo: "<<endl;
+
     cout<<"Ingresa el largo: "<<endl;
     cin>>largo;
     cout<<"Ingresa el ancho"<<endl;
@@ -61,6 +62,9 @@ int main(){
     figura_1.perimetro();
     figura_1.area();
 
-    
+    //Evitar que se cierre terminal y espera cualquier tecla
+    cin.ignore();
+    cout<<endl<<"Presione cualquier tecla para salir"<<endl;
+    cin.get();
     return 0;
 }

@@ -2,11 +2,10 @@
 
 using namespace std;
 
-class Rectangulo()
-{
+class Rectangulo(){
     //Atributos
     private:
-        float largo, ancho;
+        float largo,ancho;
     //Metodos
     public:
         Rectangulo(float,float); // Constructor
@@ -27,6 +26,14 @@ void Rectangulo::perimetro(){
     opc_perimetro = (2*largo)+(2*ancho)
 
     cout<<"El perimetro del Rectangulo es: "<<opc_perimetro<<endl;
+}
+
+void Rectangulo::area(){
+    float opc_area;
+
+    opc_area = largo*ancho;
+
+    cout<<"El area del Rectangulo es: "<<opc_area<<endl;
 }
 
 int main()

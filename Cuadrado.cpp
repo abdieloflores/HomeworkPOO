@@ -25,9 +25,16 @@ void pedir_datos(float &a){
 }
 
 int main(){
+    float a;
+    cout<<endl<<"CALCULO DE AREA Y PERIMETRO DE UN CUADRADO"<<endl<<endl;
+    pedir_datos(a);
+    Cuadrado cuadro(a);
+
+    cuadro.perimetro();
+    cuadro.area();
 
     cin.ignore();
-    cout<<"Presiones cualquier tecla para continuar...";
+    cout<<endl<<"Presiones cualquier tecla para continuar...";
     cin.get();
     return 0;
 }

@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdlib.h>
 
 using namespace std;
 
@@ -38,33 +37,30 @@ void Rectangulo::area(){
     cout<<"El area del Rectangulo es: "<<opc_area<<endl;
 }
 
-void Rectangulo::menu(){
-    cout<<"Conoce el área de un rectagulo: "<<endl;
+void pedir_datos(float &a, float&b){
     cout<<"Ingresa el largo: "<<endl;
-    cin>>largo;
+    cin>>a;
     cout<<"Ingresa el ancho"<<endl;
-    cin>>ancho;
+    cin>>b;
 }
 
 int main(){
-    float largo, ancho;
+    float a,b;
+    int opcion;
 
-    cout<<"Ingresa el largo: "<<endl;
-    cin>>largo;
-    cout<<"Ingresa el ancho"<<endl;
-    cin>>ancho;
-    //Crear objeto = Instanciar una clase, (Podemos hacer cuantos objetos queramos de una clase)
-    
-    //Creando Objeto Rectangulo
-    Rectangulo figura_1(largo,ancho);
-
-    //Objeto mandando llamar el metodo
-    figura_1.perimetro();
-    figura_1.area();
-
+    while(1){
+        pedir_datos(a,b);
+        //Crear objeto = Instanciar una clase, (Podemos hacer cuantos objetos queramos de una clase)
+        //Creando Objeto Rectangulo
+        Rectangulo figura_1(a,b);
+        //Objeto mandando llamar el metodo
+        figura_1.perimetro();
+        figura_1.area();
+    }
     //Evitar que se cierre terminal y espera cualquier tecla
     cin.ignore();
     cout<<endl<<"Presione cualquier tecla para salir"<<endl;
     cin.get();
+
     return 0;
 }

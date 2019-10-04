@@ -10,6 +10,10 @@ class Cuadrado{
         void perimetro();
         void area();
 };
+Cuadrado::Cuadrado(float _lado){
+    lado = _lado;
+}
+
 
 int main(){
 

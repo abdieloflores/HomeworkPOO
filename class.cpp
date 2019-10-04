@@ -11,6 +11,7 @@ class Rectangulo{
         Rectangulo(float,float); // Constructor
         void perimetro();
         void area();
+        void menu();
 };
 
 //Haciendo Constructor
@@ -36,12 +37,25 @@ void Rectangulo::area(){
     cout<<"El area del Rectangulo es: "<<opc_area<<endl;
 }
 
-int main()
-{
+void Rectangulo::menu(){
+    cout<<"Conoce el área de un rectagulo: "<<endl;
+    cout<<"Ingresa el largo: "<<endl;
+    cin>>largo;
+    cout<<"Ingresa el ancho"<<endl;
+    cin>>ancho;
+}
+
+int main(){
+    float largo, ancho;
+    cout<<"Conoce el área de un rectagulo: "<<endl;
+    cout<<"Ingresa el largo: "<<endl;
+    cin>>largo;
+    cout<<"Ingresa el ancho"<<endl;
+    cin>>ancho;
     //Crear objeto = Instanciar una clase, (Podemos hacer cuantos objetos queramos de una clase)
     
     //Creando Objeto Rectangulo
-    Rectangulo figura_1(5,6);
+    Rectangulo figura_1(largo,ancho);
 
     //Objeto mandando llamar el metodo
     figura_1.perimetro();

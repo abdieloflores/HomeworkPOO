@@ -14,8 +14,12 @@ Cuadrado::Cuadrado(float _lado){
     lado = _lado;
 }
 void Cuadrado::perimetro(){
-    cout<<"El perimetro es de: "<<(lado*4)
+    cout<<"El perimetro es de: "<<(lado*4)<<endl;
 }
+void Cuadrado::area(){
+    cout<<"El area es de: "<<(lado*lado)<<endl;
+}
+
 
 int main(){
 

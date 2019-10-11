@@ -18,6 +18,11 @@ class Person{
 
 };
 
+Person::Person(int _age, string _name){
+    age = _age;
+    name = _name;
+}
+
 int main (){
 
 

@@ -24,18 +24,19 @@ Person::Person(int _age, string _name){
 }
 
 void Person::read(){
-    cout<<"Hola soy"<<name<<" y estoy leyendo un libro.";
+    cout<<"Hola soy "<<name<<" tengo "<<age<<" y estoy leyendo un libro."<<endl;
 }
 void Person::eat(){
-    cout<<"Hola soy"<<name<<" y estoy comiendo una hamburguesa.";
+    cout<<"Mi nombre es "<<name<<" y me gusta comer sushi"<<endl;
 }
 void Person::run(){
-    cout<<"Hola soy"<<name<<" y estoy corriendo en la pista.";
+    cout<<"Mis amigos me dicen "<<name<<" y corro un maratón de 10km"<<endl;
 }
 
 int main (){
 
 
-
+cin.ignore();
+cout<<"\n\nPresiones cualquier tecla para continuar..."<<endl;
 return 0;
 }

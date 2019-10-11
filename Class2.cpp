@@ -26,6 +26,9 @@ Person::Person(int _age, string _name){
 void Person::read(){
     cout<<"Hola soy"<<name<<" y estoy leyendo un libro.";
 }
+void Person::eat(){
+    cout<<"Hola soy"<<name<<" y estoy comiendo una hamburguesa.";
+}
 
 int main (){
 

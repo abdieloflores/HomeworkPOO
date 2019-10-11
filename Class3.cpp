@@ -19,13 +19,13 @@ Date::Date(int _day,int _month, int _year){
 }
 
 void Date::show(){
-    cout<<"La fecha es: "<<day<<"/ "<<month<<" / "<<year<<endl;
+    cout<<"La fecha es: "<<day<<" / "<<month<<" / "<<year<<endl;
 }
-
-
 
 int main (){
 
+    Date today(11, 10, 2019);
+    today.show();
 
 cin.ignore();
 cout<<"\n\nPresiones cualquier tecla para continuar..."<<endl;

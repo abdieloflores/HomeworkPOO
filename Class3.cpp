@@ -18,6 +18,9 @@ Date::Date(int _day,int _month, int _year){
     year = _year;
 }
 
+void Date::show(){
+    cout<<"La fecha es: "<<day<<"/ "<<month<<" / "<<year<<endl;
+}
 
 
 

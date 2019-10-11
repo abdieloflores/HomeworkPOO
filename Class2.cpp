@@ -23,6 +23,10 @@ Person::Person(int _age, string _name){
     name = _name;
 }
 
+void Person::read(){
+    cout<<"Hola soy"<<name<<" y estoy leyendo un libro.";
+}
+
 int main (){
 
 

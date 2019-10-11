@@ -29,6 +29,9 @@ void Person::read(){
 void Person::eat(){
     cout<<"Hola soy"<<name<<" y estoy comiendo una hamburguesa.";
 }
+void Person::run(){
+    cout<<"Hola soy"<<name<<" y estoy corriendo en la pista.";
+}
 
 int main (){
 

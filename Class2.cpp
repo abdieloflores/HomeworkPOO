@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <string.h>
 
 using namespace std;
 
@@ -8,9 +9,11 @@ using namespace std;
 
 class Person{
     //Atributos
+    private:    
         int age;
         string name;
     //Metodos
+    public:
         Person(int, string);
         void read();
         void eat();
@@ -24,7 +27,7 @@ Person::Person(int _age, string _name){
 }
 
 void Person::read(){
-    cout<<"Hola soy "<<name<<" tengo "<<age<<" y estoy leyendo un libro."<<endl;
+    cout<<"Hola soy "<<name<<" tengo "<<age<<" años y estoy leyendo un libro."<<endl;
 }
 void Person::eat(){
     cout<<"Mi nombre es "<<name<<" y me gusta comer sushi"<<endl;
@@ -34,9 +37,14 @@ void Person::run(){
 }
 
 int main (){
-
+    
+    Person a(23,"Abdiel");
+    a.read();
+    a.eat();
+    a.run();
 
 cin.ignore();
 cout<<"\n\nPresiones cualquier tecla para continuar..."<<endl;
+cin.get();
 return 0;
 }

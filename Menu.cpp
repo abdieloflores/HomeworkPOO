@@ -4,44 +4,62 @@ using namespace std;
 
 class Menu{
 private:
-    int opcion;
+
 public:
-    Menu(int);
-    void show();
+    Menu();
+    void show(int &);
 };
 
-Menu::Menu(int _opcion){
-    opcion = _opcion;
+Menu::Menu(){
 }
-void Menu::show(){
+void Menu::show(int &_opcion){
     cout<<"---- MENU ----"<<endl;
     cout<<"1.- Agregar"<<endl;
     cout<<"2.- Editar"<<endl;
     cout<<"3.- Eliminar"<<endl;
-    cout<<"Opcion: "<<endl;
+    cout<<"4.- Salir"<<endl;
+    cout<<"Opcion: ";
+    cin>>_opcion;
 }
 
 int main(){
     int opcion;
 
-    Menu menu1(opcion);
-    menu1.show();
-
-    switch (opcion)
+    Menu menu1;
+    while (1)
     {
-    case 1:
-        cout<<"Uno";
-        break;
-    case 2:
-        cout<<"Uno";
-        break;
-    case 3:
-        cout<<"Uno";
-        break;
-    default:
-        break;
-    }
+        system("clear");
+        menu1.show(opcion);
 
+        switch (opcion)
+        {
+        case 1:
+            system("clear");
+            cout<<"Selecciono opción uno"<<endl;
+            cin.ignore();
+            cin.get();
+            break;
+        case 2:
+            system("clear");
+            cout<<"Selecciono opción dos"<<endl;
+            cin.ignore();
+            cin.get();
+            break;
+        case 3:
+            system("clear");
+            cout<<"Selecciono opción tres"<<endl;
+            cin.ignore();
+            cin.get();
+            break;
+        case 4:
+            return 0;
+        default:
+            system("clear");
+            cout<<"La opción no existe, intentelo de nuevo"<<endl<<endl;
+            cin.get();
+            break;
+        }
+    }
 
     cin.ignore();
     cout<<"Presione cualquier tecla para terminar"<<endl;

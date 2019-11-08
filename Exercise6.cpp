@@ -14,13 +14,13 @@ class Person{
         void showPerson();
 };  
 
-//Clase Hija que hereda
+//Clase hija que hereda
 class Student : public Person{
     private:
         string code;
-        int finalNote;
+        float finalNote;
     public:
-        Student(string,int,string,int);
+        Student(string,int,string,float);
         void showStudent();
 };
 
@@ -33,16 +33,25 @@ void Person::showPerson(){
     cout<<"Edad: "<<age<<endl;
 }
 
-Student::Student(string _name, int _age, string _code, int _finalNote): Person (_name,_age) {
+Student::Student(string _name, int _age, string _code, float _finalNote): Person(_name,_age){
+    code = _code;
+    finalNote = _finalNote;
+}
 
+void Student::showStudent(){
+    showPerson();
+    cout<<"Code: "<<code<<endl;
+    cout<<"Final Note: "<<finalNote<<endl;
 }
 
 int main (){
 
+    Student student1("Abdiel",24,"SOF8376434",92.6);
 
+    student1.showStudent();
 
     cin.ignore();
-    cout<<"Presione cualquier tecla para continuar...";<<endl;
     cin.get();
     return 0;
 }
+
